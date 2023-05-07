@@ -2,15 +2,12 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'folder/Inbox',
-    pathMatch: 'full'
-  },
-  {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  { path: '', redirectTo: '/notes', pathMatch: 'full' },
+  { path: 'notes',loadChildren: () => import('./pages/notes/notes.module').then( m => m.NotesPageModule) },  {
+    path: 'note',
+    loadChildren: () => import('./pages/note/note.module').then( m => m.NotePageModule)
   }
+
 ];
 
 @NgModule({

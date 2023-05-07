@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title slot="start">Notas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ng-container *ngIf="notes.length">
+    <app-notes-card [note]="note" *ngFor="let note of notes" [routerLink]="['/note/' + note.id]" ></app-notes-card>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+      <ion-fab-button color="primary" [routerLink]="['/note']">
+        <ion-icon mode="ios" name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </ng-container>
+
+  <ng-container *ngIf="!notes.length">
+    <ion-list>
+      <ion-item>
+        <ion-icon name="document-text-outline" slot="start"></ion-icon>
+        <p class="ion-padding-start ion-padding-end">
+          Não há notas para serem exibidas.
+        </p>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button type="icon" (click)="close()">
+        <ion-icon name="chevron-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title slot="start">Nota</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" [formGroup]="noteForm">
+  <ng-container *ngIf="!isLoading">
+    <ion-list>
+      <ion-item>
+        <img (click)="takePicture()" [src]="note?.image ? note?.image : 'https://ionicframework.com/docs/img/demos/card-media.png'"/>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Título</ion-label>
+        <ion-input type="text" [value]="note?.title" formControlName="title"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Nota</ion-label>
+        <ion-textarea formControlName="text"  placeholder="Escreva aqui..." [autoGrow]="true"></ion-textarea>
+      </ion-item>
+    </ion-list>
+  </ng-container>
+
+  <ng-container *ngIf="isLoading">
+    <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+    <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+    <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+    <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+    <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+    <ion-skeleton-text [animated]="true"></ion-skeleton-text>
+  </ng-container>
+</ion-content>
+
+<ion-footer *ngIf="!isLoading">
+  <ion-toolbar>
+    <ion-button *ngIf="!note" color="primary" expand="block" (click)="save()">
+      Salvar
+    </ion-button>
+    <ion-button *ngIf="note" color="primary" expand="block" (click)="update()">
+      Atualizar
+    </ion-button>
+  </ion-toolbar>
+</ion-footer>

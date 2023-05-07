@@ -1,0 +1,11 @@
+<ion-card *ngIf="note" >
+  <img [src]="note.image ? note.image : 'https://ionicframework.com/docs/img/demos/card-media.png'"/>
+
+  <ion-card-header>
+    <ion-card-title>{{ note.title }}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    {{ note.text.length <= 150 ? note.text : note.text.slice(0, 150) + '...' }}
+  </ion-card-content>
+</ion-card>

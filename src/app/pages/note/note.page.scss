@@ -1,0 +1,32 @@
+ion-content {
+  ion-skeleton-text {
+    height: 150px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+  }
+}
+
+ion-item {
+  :host(.item-interactive.ion-valid) {
+    --highlight-background: var(--ion-color-primary);
+  }
+}
+
+ion-list, img {
+  border-radius: 8px;
+}
+
+ion-footer {
+  ion-toolbar {
+    --padding-start: 16px;
+    --padding-end: 16px;
+
+    ion-button {
+      margin: 0px;
+    }
+
+    ion-skeleton-text {
+      border-radius: 8px;
+    }
+  }
+}
