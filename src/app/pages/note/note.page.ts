@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { Component, Input } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { NavController } from '@ionic/angular';
 import { NoteService } from 'src/app/core/api/note/note.service';
@@ -23,11 +23,11 @@ export class NotePage {
     private readonly route: ActivatedRoute,
     private readonly noteService: NoteService,
     private readonly formBuilder: FormBuilder,
-    private readonly cameraService: CameraService,
+    private readonly cameraService: CameraService
   ) {
     this.noteForm = this.formBuilder.group({
-      title: [''],
-      text: [''],
+      title: ['', Validators.required],
+      text: ['', Validators.required],
       image: [''],
       id: [''],
     });
@@ -51,7 +51,7 @@ export class NotePage {
       this.noteForm.patchValue({
         title: this.note.title,
         text: this.note.text,
-        images: this.note.image,
+        image: this.note.image,
       });
     }
   }
@@ -92,6 +92,8 @@ export class NotePage {
       this.noteForm.patchValue({
         image: image.webPath,
       });
+
+      this.noteForm.markAsDirty();
     }
   }
 

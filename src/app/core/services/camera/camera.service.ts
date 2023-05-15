@@ -16,16 +16,16 @@ export class CameraService {
 
     try {
       const image = await Camera.getPhoto({
-        resultType: CameraResultType.Uri,
-        allowEditing: false,
-        quality: 100,
-        height: 640,
-        width: 480,
-        saveToGallery: true,
-        correctOrientation: true,
-        promptLabelCancel: 'Cancelar',
-        promptLabelHeader: 'Tirar foto',
-        source: CameraSource.Camera
+        resultType: CameraResultType.Uri, // tipo de retorno da foto
+        allowEditing: false, // permite editar a foto
+        quality: 100, // qualidade da foto
+        height: 640, // altura da foto
+        width: 480, // largura da foto
+        saveToGallery: true, // salva a foto na galeria
+        correctOrientation: true, // corrige a orientação da foto
+        promptLabelCancel: 'Cancelar', // texto do botão de cancelar
+        promptLabelHeader: 'Tirar foto', // texto do cabeçalho
+        source: CameraSource.Camera // fonte da foto
       });
 
       return image;

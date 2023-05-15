@@ -5,19 +5,19 @@ export const notesList: Note[] = [
     id: '1',
     title: 'Lista de compras',
     text: 'Leite, ovos, pão, queijo, maçãs, bananas, frango',
-    image: 'https://i.pinimg.com/736x/8b/ee/9a/8bee9a0f5485ac940546c6009bfb679e.jpg'
+    image: 'https://avatars.githubusercontent.com/u/17989287?s=280&v=4'
   },
   {
     id: '2',
     title: 'Citações inspiradoras',
     text: '"O sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert CollierO sucesso é a soma de pequenos esforços repetidos dia após dia." - Robert Collier',
-    image: 'https://i.pinimg.com/736x/0c/2e/19/0c2e19ffacb3c84c8afce715ab9e3515.jpg'
+    image: 'https://play-lh.googleusercontent.com/7sH1qKJkGg60fV_x3DhowQ9sxBfJS7PafvkU4OMnemOZszvwBr-nj9MuCkemxXvA6vtb'
   },
   {
     id: '3',
     title: 'Receita',
     text: 'Massa de pizza caseira: farinha, água, fermento, sal, açúcar, azeite',
-    image: 'https://i.pinimg.com/564x/73/05/66/73056613b5061f6bbd0e87740871815c.jpg'
+    image: 'https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/a4/60/62/a460621c-fdb5-eaa7-f172-83878adfe8c0/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png'
   },
   {
     id: '4',

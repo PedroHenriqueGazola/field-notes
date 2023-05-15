@@ -13,11 +13,14 @@
   <ng-container *ngIf="!isLoading">
     <ion-list>
       <ion-item>
-        <img (click)="takePicture()" [src]="note?.image ? note?.image : 'https://ionicframework.com/docs/img/demos/card-media.png'"/>
+        <img
+          (click)="takePicture()"
+          [src]="noteForm.value.image ? noteForm.value.image : 'https://ionicframework.com/docs/img/demos/card-media.png'"
+        />
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Título</ion-label>
-        <ion-input type="text" [value]="note?.title" formControlName="title"></ion-input>
+        <ion-input type="text" formControlName="title"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="stacked">Nota</ion-label>
@@ -38,10 +41,22 @@
 
 <ion-footer *ngIf="!isLoading">
   <ion-toolbar>
-    <ion-button *ngIf="!note" color="primary" expand="block" (click)="save()">
+    <ion-button
+      *ngIf="!note"
+      color="primary"
+      expand="block"
+      (click)="save()"
+      [disabled]="noteForm.invalid || noteForm.pristine"
+    >
       Salvar
     </ion-button>
-    <ion-button *ngIf="note" color="primary" expand="block" (click)="update()">
+    <ion-button
+      *ngIf="note"
+      color="primary"
+      expand="block"
+      (click)="update()"
+      [disabled]="noteForm.invalid || noteForm.pristine"
+    >
       Atualizar
     </ion-button>
   </ion-toolbar>
